@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="49128EE8-F1F7-33D2-CB9D-0F982799A98E" name="DNT_POSTAGEM_REACAO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<generatorID>8375CA7E-5924-94A2-269F-25C4B8BBBCAF</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_postagem_reacao" id="77F7B94B-9B9E-CE04-B049-A89905BB0702">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<commentInRDBMS>Atributo: cd_postagem_reacao&lt;br/&gt;Classe:  Determinante&lt;br/&gt;Domínio: Numérico&lt;br/&gt;Tamanho: 5&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Chave primária da tabela dnt_postagem_reacao</commentInRDBMS>
+<generatorID>6B036FF7-DCC4-8E67-4439-6872A80B7B82</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DNT_POSTAGEM_cd_postagem" id="7663A386-84EC-354B-B4DC-C2B9942F3C2F">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<generatorID>5FC05D6A-0507-3A05-8F80-B33A269669EF</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F69B7F8-7867-B564-4CE6-EE89E2CB435D" referredColumn="A57119C8-125B-617F-3E0D-C2E06C6C6D69"/>
+</associations>
+</Column>
+<Column name="DNT_USUARIO_cd_usuario" id="7B7CBD80-6731-1D53-DCE9-A269DA3DE925">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<generatorID>367E5275-40AD-514E-0731-1A056C5FC5C0</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F8CD8EF-A755-478E-262E-81EE616612C2" referredColumn="C5CCFDC2-5594-666E-2E0E-5858BC5070E8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD95BCB3-99DB-33A5-A9B9-5ED33D0F28FC" name="DNT_POSTAGEM_REACAO_PK">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<generatorID>20C044B2-3A22-A4DE-3E68-9CBFEF53B61E</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77F7B94B-9B9E-CE04-B049-A89905BB0702"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5E6BF47-33BA-4735-7D9F-46E15F292BF4" name="DNT_POSTAGEM_REACAO_DNT_POSTAGEM_FK">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<generatorID>0DBD7EAD-63AE-0A44-2EF4-9080926D3DBE</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7663A386-84EC-354B-B4DC-C2B9942F3C2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD2CF880-B6C8-678C-D642-329C130037FF" name="DNT_POSTAGEM_REACAO_DNT_USUARIO_FK">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<generatorID>722D8DF4-0582-D491-A368-03E7779638DD</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B7CBD80-6731-1D53-DCE9-A269DA3DE925"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

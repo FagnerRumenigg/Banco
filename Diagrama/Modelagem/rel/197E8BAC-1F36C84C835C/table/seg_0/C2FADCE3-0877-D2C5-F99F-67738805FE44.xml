@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2FADCE3-0877-D2C5-F99F-67738805FE44" name="DNT_COMENTARIO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>0547256F-F092-B2BF-0BFB-F653A1AB0F87</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_comentario" id="0CB6F926-AF0F-9D74-C143-DB543A1AB3D2">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: cd_comentario&lt;br/&gt;Classe:  Determinante&lt;br/&gt;Domínio: Numérico&lt;br/&gt;Tamanho: 5&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Chave primária da tabela dnt_comentario</commentInRDBMS>
+<generatorID>C1646CCF-127F-196A-BAB9-843E6B4DF9B9</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_comentario" id="C5A7BCD0-F2A0-B0BF-F2FA-E194EABE1E80">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: ds_postagem&lt;br/&gt;Classe:  Simples&lt;br/&gt;Domínio: Texto&lt;br/&gt;Tamanho: 400&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Coluna que irá armazenar um comentário de um determinado usuário em uma postagem</commentInRDBMS>
+<generatorID>7613FF9E-44EE-E1FC-86B6-B2C85194F0E4</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_postagem" id="ABDF1005-6F6C-D926-C518-DAAF6B00982B">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>7CD87174-661B-9ACE-8659-A6F51793FCAA</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77C12696-2F24-C825-4B87-16E6D3ABDB17" referredColumn="2C22002B-269E-BED8-E634-2CDDE3E4BE02"/>
+</associations>
+</Column>
+<Column name="cd_usuario" id="253BF877-39B2-676E-BCB2-4ADE304A35E1">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>7DF42A07-DF19-632A-C94B-D9F0BDF7A8BD</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96380B61-BC1D-7160-3014-2EA3CEEB3DF0" referredColumn="AB53D1FF-483A-2E07-5197-4DA018235570"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9804D50D-2A16-E3BE-D0DB-05FAEA23B9F8" name="PK_COMENTARIO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>C2B0813A-F2D5-C547-4ED0-E7645D1F0DB1</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CB6F926-AF0F-9D74-C143-DB543A1AB3D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D48B7D9B-80E3-FC85-A6CD-7A5F77D83B27" name="FK_COMENTARIO_USUARIO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>211163DF-5827-42B9-0D62-A1D895BB125E</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="253BF877-39B2-676E-BCB2-4ADE304A35E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40CB0E43-FF69-ACEB-E80F-8DA045E059BB" name="FK_COMENTARIO_POSTAGEM">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>9134CBDF-5910-56D3-4934-63BB02A2E4F0</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABDF1005-6F6C-D926-C518-DAAF6B00982B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F986DBA8-4593-AF09-38A7-2724CB7F9732" name="DNT_USUARIO">
+<createdBy>fagne</createdBy>
+<createdTime>2020-10-07 14:49:23 UTC</createdTime>
+<generatorID>9A872903-9404-3B7D-09DF-CEE2DA898F46</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_usuario" id="629FC7EA-37ED-55E6-E4E3-B22D6DA134AE">
+<createdBy>fagne</createdBy>
+<createdTime>2020-10-07 14:49:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: cd_usuario
+Classe:  Determinante
+Domínio: Numérico
+Tamanho: 5
+Obrigatório: Sim
+Descrição: Chave primária da tabela dnt_usuario
+
+]]></commentInRDBMS>
+<generatorID>A2DABE78-FD60-14DA-3DB2-ACF01D598357</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_usuario" id="6225F1A2-6A0B-8CF7-EFD0-BDE287540275">
+<createdBy>fagne</createdBy>
+<createdTime>2020-10-07 14:49:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: nm_usuario
+Classe:  Simples
+Domínio: Texto
+Tamanho: 20
+Obrigatório: Sim
+Descrição: Coluna que irá guardar o nome dos usuários]]></commentInRDBMS>
+<generatorID>0ACBAE6A-931A-4CDF-932A-CED8E5E2E789</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_email" id="646AA29A-B71D-F8D5-90FE-93316E412FED">
+<createdBy>fagne</createdBy>
+<createdTime>2020-10-07 14:49:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: ds_email
+Classe:  Simples
+Domínio: Texto
+Tamanho: 60
+Obrigatório: Sim
+Descrição: Coluna que irá guardar o email cadastrado pelo usuário]]></commentInRDBMS>
+<generatorID>7B615816-C9C0-1284-8B4C-109643AE1EBF</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_senha" id="C9B168B9-8F0B-A439-195F-F9E0D61D2772">
+<createdBy>fagne</createdBy>
+<createdTime>2020-10-07 14:49:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: ds_senha
+Classe:  Simples
+Domínio: Texto
+Tamanho: 20
+Obrigatório: Sim
+Descrição: Coluna que irá guardar a senha cadastrada pelo usuário. Deve ter no mínimo 8 caracteres]]></commentInRDBMS>
+<generatorID>4A37500E-6BE8-1DBA-A315-7757DE1A6A00</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fl_usuario" id="11549C1F-17FB-3F9D-3F58-5C1B11DFB158">
+<createdBy>fagne</createdBy>
+<createdTime>2020-10-07 14:49:23 UTC</createdTime>
+<generatorID>7A3C888A-90BE-F9ED-8A55-9672A2606707</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7CE34CF-CA88-18C1-204F-FE4AEAB09C77" name="PK_USUARIO">
+<createdBy>fagne</createdBy>
+<createdTime>2020-10-07 14:49:23 UTC</createdTime>
+<generatorID>C58381BB-05F1-4A3F-17A5-3EBF6D1EABBD</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="629FC7EA-37ED-55E6-E4E3-B22D6DA134AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

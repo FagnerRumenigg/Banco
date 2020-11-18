@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA59401F-7A55-D008-E570-4772CFEF0937" name="DNT_POSTAGEM_REACAO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>8375CA7E-5924-94A2-269F-25C4B8BBBCAF</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_postagem_reacao" id="264ADB1F-BB13-F045-2044-530B1887D595">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: cd_postagem_reacao&lt;br/&gt;Classe:  Determinante&lt;br/&gt;Domínio: Numérico&lt;br/&gt;Tamanho: 5&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Chave primária da tabela dnt_postagem_reacao</commentInRDBMS>
+<generatorID>6B036FF7-DCC4-8E67-4439-6872A80B7B82</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_reacao" id="9956791A-E505-BB5A-E0C2-0634AF1B5598">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: cd_reacao&lt;br/&gt;Classe:  Simples&lt;br/&gt;Domínio: Numérico&lt;br/&gt;Tamanho: 5&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Chave estrangeira da tabela dnt_reacao</commentInRDBMS>
+<generatorID>634D22D8-9CEE-BB7E-AC81-CCED4D54805A</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78B86F0B-4C1B-5646-58DA-AD3310D65576" referredColumn="E16DF754-953E-3C2E-CA0F-9DB2B56F069F"/>
+</associations>
+</Column>
+<Column name="cd_postagem" id="FF21C7E0-D789-A263-E946-DDAD15EC552D">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>5FC05D6A-0507-3A05-8F80-B33A269669EF</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F2F4689-4109-DD16-E155-CC0A37185BC2" referredColumn="2C22002B-269E-BED8-E634-2CDDE3E4BE02"/>
+</associations>
+</Column>
+<Column name="cd_usuario" id="90CF9B69-85B8-F138-7E06-E087031EAC21">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>367E5275-40AD-514E-0731-1A056C5FC5C0</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E5E8D23-DF66-0C8D-1222-C8E9D21CF67E" referredColumn="AB53D1FF-483A-2E07-5197-4DA018235570"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D71317A-B124-7E55-2293-3D2F6A663AE5" name="PK_POSTAGEM_REACAO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>20C044B2-3A22-A4DE-3E68-9CBFEF53B61E</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="264ADB1F-BB13-F045-2044-530B1887D595"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A458D98D-D667-D31E-37E6-3BB7512948E0" name="FK_POSTAGEM_REACAO_POSTAGEM">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>0DBD7EAD-63AE-0A44-2EF4-9080926D3DBE</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF21C7E0-D789-A263-E946-DDAD15EC552D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DDC8352-8C9A-BDA5-138E-DD4457CE991D" name="FK_REACAO_POSTAGEM_REACAO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>6B5BE03F-5B06-F1D8-BC2B-C078D146A605</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9956791A-E505-BB5A-E0C2-0634AF1B5598"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4C2DB4C-9F85-78E7-049F-40B467A2C590" name="FK_POSTAGEM_REACAO_USUARIO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>722D8DF4-0582-D491-A368-03E7779638DD</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90CF9B69-85B8-F138-7E06-E087031EAC21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

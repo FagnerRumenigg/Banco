@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5C97AEA-4156-F0F7-4DC5-523B370411CA" name="DNT_USUARIO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>9A872903-9404-3B7D-09DF-CEE2DA898F46</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_usuario" id="AB53D1FF-483A-2E07-5197-4DA018235570">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: cd_usuario&lt;br/&gt;Classe:  Determinante&lt;br/&gt;Domínio: Numérico&lt;br/&gt;Tamanho: 5&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Chave primária da tabela dnt_usuario&lt;br/&gt;&lt;br/&gt;</commentInRDBMS>
+<generatorID>A2DABE78-FD60-14DA-3DB2-ACF01D598357</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_usuario" id="069A736C-BFCD-3032-711E-2BEDCC02B622">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: nm_usuario&lt;br/&gt;Classe:  Simples&lt;br/&gt;Domínio: Texto&lt;br/&gt;Tamanho: 20&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Coluna que irá guardar o nome dos usuários</commentInRDBMS>
+<generatorID>0ACBAE6A-931A-4CDF-932A-CED8E5E2E789</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_email" id="4F8FB4C3-D4DD-D554-E4F6-6610239BFA36">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: ds_email&lt;br/&gt;Classe:  Simples&lt;br/&gt;Domínio: Texto&lt;br/&gt;Tamanho: 60&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Coluna que irá guardar o email cadastrado pelo usuário</commentInRDBMS>
+<generatorID>7B615816-C9C0-1284-8B4C-109643AE1EBF</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_senha" id="57B143A1-79C1-93D2-FE25-E3A2819480DF">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: ds_senha&lt;br/&gt;Classe:  Simples&lt;br/&gt;Domínio: Texto&lt;br/&gt;Tamanho: 20&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Coluna que irá guardar a senha cadastrada pelo usuário. Deve ter no mínimo 8 caracteres</commentInRDBMS>
+<generatorID>4A37500E-6BE8-1DBA-A315-7757DE1A6A00</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fl_foto" id="4D03B277-2CB7-6029-2E63-1397096BEE8B">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: fl_foto&lt;br/&gt;Classe:  Simples&lt;br/&gt;Domínio: Bytes[ ]&lt;br/&gt;Obrigatório: Não&lt;br/&gt;Descrição: Coluna que irá guardar uma foto do usuário</commentInRDBMS>
+<generatorID>54AD6E64-82CF-C319-EAD2-8787864E9152</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9719F0B-D298-6FD5-3558-30DA2DB05F9F" name="PK_USUARIO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>C58381BB-05F1-4A3F-17A5-3EBF6D1EABBD</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB53D1FF-483A-2E07-5197-4DA018235570"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

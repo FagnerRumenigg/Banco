@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="89308664-2EA3-2EE4-7E89-3510A84D2FDA" name="DNT_POSTAGEM_FAVORITA">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-05-02 00:17:55 UTC</createdTime>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_postagem_favorita" id="538FE445-4C45-0D08-DAAA-2EDCFAFFF5D1">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-05-02 00:22:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: cd_postagem_favorita
+Classe:  Determinante
+Domínio: Numérico
+Tamanho: 5
+Obrigatório: Sim
+Descrição: Chave primária da tabela dnt_postagem_favorita]]></commentInRDBMS>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_usuario" id="0DF0A75A-9672-3807-C6C9-2E61DBEFA134">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-05-02 00:21:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: cd_usuario
+Classe:  Simples
+Domínio: Numérico
+Tamanho: 5
+Obrigatório: Sim
+Descrição: Chave estrangeira da tabela dnt_usuario]]></commentInRDBMS>
+<generatorID>381ACEA9-49C1-1623-1DC6-5C10999D4945</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<referedAttribute>A2DABE78-FD60-14DA-3DB2-ACF01D598357</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_postagem" id="D0DCC3A8-B1E8-9D77-5FB2-263843C43A3F">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 13:59:44 UTC</createdTime>
+<generatorID>CF2482B6-8DDD-5378-239D-D0DFB4710DE8</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<referedAttribute>8D0CBEE5-D7C6-2242-3240-15C8D0930130</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AC426ECF-AFDE-77C6-612E-C927F47C1AD4" name="PK_POSTAGEM_FAVORITA">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-05-02 00:21:38 UTC</createdTime>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>538FE445-4C45-0D08-DAAA-2EDCFAFFF5D1,381ACEA9-49C1-1623-1DC6-5C10999D4945,CF2482B6-8DDD-5378-239D-D0DFB4710DE8</newElementsIDs>
+<usedAttributes>
+<attributeRef>538FE445-4C45-0D08-DAAA-2EDCFAFFF5D1</attributeRef>
+<attributeRef>0DF0A75A-9672-3807-C6C9-2E61DBEFA134</attributeRef>
+<attributeRef>D0DCC3A8-B1E8-9D77-5FB2-263843C43A3F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

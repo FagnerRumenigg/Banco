@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A872903-9404-3B7D-09DF-CEE2DA898F46" name="DNT_USUARIO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:21:01 UTC</createdTime>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_usuario" id="A2DABE78-FD60-14DA-3DB2-ACF01D598357">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:21:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: cd_usuario
+Classe:  Determinante
+Domínio: Numérico
+Tamanho: 5
+Obrigatório: Sim
+Descrição: Chave primária da tabela dnt_usuario
+
+]]></commentInRDBMS>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_usuario" id="0ACBAE6A-931A-4CDF-932A-CED8E5E2E789">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:21:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: nm_usuario
+Classe:  Simples
+Domínio: Texto
+Tamanho: 20
+Obrigatório: Sim
+Descrição: Coluna que irá guardar o nome dos usuários]]></commentInRDBMS>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_email" id="7B615816-C9C0-1284-8B4C-109643AE1EBF">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:22:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: ds_email
+Classe:  Simples
+Domínio: Texto
+Tamanho: 60
+Obrigatório: Sim
+Descrição: Coluna que irá guardar o email cadastrado pelo usuário]]></commentInRDBMS>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_senha" id="4A37500E-6BE8-1DBA-A315-7757DE1A6A00">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:22:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: ds_senha
+Classe:  Simples
+Domínio: Texto
+Tamanho: 20
+Obrigatório: Sim
+Descrição: Coluna que irá guardar a senha cadastrada pelo usuário. Deve ter no mínimo 8 caracteres]]></commentInRDBMS>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fl_usuario" id="7A3C888A-90BE-F9ED-8A55-9672A2606707">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-09-14 11:48:50 UTC</createdTime>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C58381BB-05F1-4A3F-17A5-3EBF6D1EABBD" name="PK_USUARIO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:21:33 UTC</createdTime>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>A2DABE78-FD60-14DA-3DB2-ACF01D598357</newElementsIDs>
+<usedAttributes>
+<attributeRef>A2DABE78-FD60-14DA-3DB2-ACF01D598357</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

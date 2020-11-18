@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelagem" id="ABB9309B-20C5-51C3-E6DB-EC37B29DF522" version="3.5">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:14:02 UTC</createdTime>
+<ownerDesignName>Modelagem</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>ABB9309B-20C5-51C3-E6DB-EC37B29DF522</designId>
+</OSDM_Design>

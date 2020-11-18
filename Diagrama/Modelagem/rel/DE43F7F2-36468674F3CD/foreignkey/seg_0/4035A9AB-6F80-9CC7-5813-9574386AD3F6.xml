@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4035A9AB-6F80-9CC7-5813-9574386AD3F6" containerWithKeyObject="EDFD5263-25E6-D7DD-C40F-5DAA18551238" localFKIndex="EFCFCD3B-476A-2CEB-0EFA-21FE677C43AC" name="FK_POSTAGEM_FAVORITA_POSTAGEM">
+<createdBy>fagne</createdBy>
+<createdTime>2020-10-07 14:49:23 UTC</createdTime>
+<generatorID>CF2482B6-8DDD-5378-239D-D0DFB4710DE8</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<referredTableLongName>DNT_POSTAGEM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F72B9B80-B35D-28B8-E1EB-9DA1E08D2A8F</referredTableID>
+<keyObject>6C21F513-1FBF-5C3E-9CD7-93DC0711CC83</keyObject>
+<referredKeyID>6C21F513-1FBF-5C3E-9CD7-93DC0711CC83</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_postagem</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

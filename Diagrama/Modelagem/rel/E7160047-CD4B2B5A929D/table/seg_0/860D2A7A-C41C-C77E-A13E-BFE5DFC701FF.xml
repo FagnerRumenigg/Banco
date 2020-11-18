@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="860D2A7A-C41C-C77E-A13E-BFE5DFC701FF" name="DNT_POSTAGEM_FAVORITA">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<generatorID>89308664-2EA3-2EE4-7E89-3510A84D2FDA</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_postagem_favorita" id="3E7C7971-8606-7406-E4A0-F95A2D1AFE45">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<commentInRDBMS>Atributo: cd_postagem_favorita&lt;br/&gt;Classe:  Determinante&lt;br/&gt;Domínio: Numérico&lt;br/&gt;Tamanho: 5&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Chave primária da tabela dnt_postagem_favorita</commentInRDBMS>
+<generatorID>538FE445-4C45-0D08-DAAA-2EDCFAFFF5D1</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DNT_USUARIO_cd_usuario" id="E50E67BD-4AAA-ECA7-BE0E-C6F288A071BA">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<commentInRDBMS>Atributo: cd_usuario&lt;br/&gt;Classe:  Simples&lt;br/&gt;Domínio: Numérico&lt;br/&gt;Tamanho: 5&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Chave estrangeira da tabela dnt_usuario</commentInRDBMS>
+<generatorID>0DF0A75A-9672-3807-C6C9-2E61DBEFA134</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED911811-3345-B07E-88D1-F67769DBB831" referredColumn="C5CCFDC2-5594-666E-2E0E-5858BC5070E8"/>
+</associations>
+</Column>
+<Column name="DNT_POSTAGEM_cd_postagem" id="E91BAF63-02E2-2371-2348-5D916071C230">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<generatorID>D0DCC3A8-B1E8-9D77-5FB2-263843C43A3F</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88A938F8-A8BF-CDAC-A823-2CBA4E976B37" referredColumn="A57119C8-125B-617F-3E0D-C2E06C6C6D69"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1EF55D6-5A30-CDA7-B6AE-D1CFFF9C335C" name="DNT_POSTAGEM_FAVORITA_PK">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<generatorID>AC426ECF-AFDE-77C6-612E-C927F47C1AD4</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E7C7971-8606-7406-E4A0-F95A2D1AFE45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D8EB162-A9BF-61DA-211B-630E5690F562" name="DNT_POSTAGEM_FAVORITA_DNT_POSTAGEM_FK">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<generatorID>CF2482B6-8DDD-5378-239D-D0DFB4710DE8</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E91BAF63-02E2-2371-2348-5D916071C230"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8659CF27-E12A-0103-4F9E-8B35E5B01DE5" name="DNT_POSTAGEM_FAVORITA_DNT_USUARIO_FK">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-08-27 17:28:02 UTC</createdTime>
+<generatorID>381ACEA9-49C1-1623-1DC6-5C10999D4945</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E50E67BD-4AAA-ECA7-BE0E-C6F288A071BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

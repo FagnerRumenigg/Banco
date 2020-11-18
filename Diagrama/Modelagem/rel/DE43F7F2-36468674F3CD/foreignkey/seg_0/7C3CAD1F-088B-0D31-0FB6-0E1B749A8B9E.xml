@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7C3CAD1F-088B-0D31-0FB6-0E1B749A8B9E" containerWithKeyObject="EDFD5263-25E6-D7DD-C40F-5DAA18551238" localFKIndex="6BDC2B1E-A8DF-030A-5056-59B7CB8E50FC" name="FK_POSTAGEM_FAVORITA_USUARIO">
+<createdBy>fagne</createdBy>
+<createdTime>2020-10-07 14:49:23 UTC</createdTime>
+<generatorID>381ACEA9-49C1-1623-1DC6-5C10999D4945</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<referredTableLongName>DNT_USUARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F986DBA8-4593-AF09-38A7-2724CB7F9732</referredTableID>
+<keyObject>E7CE34CF-CA88-18C1-204F-FE4AEAB09C77</keyObject>
+<referredKeyID>E7CE34CF-CA88-18C1-204F-FE4AEAB09C77</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_usuario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

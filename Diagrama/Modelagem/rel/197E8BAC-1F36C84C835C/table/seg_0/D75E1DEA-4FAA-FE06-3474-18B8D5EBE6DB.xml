@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D75E1DEA-4FAA-FE06-3474-18B8D5EBE6DB" name="DNT_POSTAGEM_FAVORITA">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>89308664-2EA3-2EE4-7E89-3510A84D2FDA</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_postagem_favorita" id="D7502645-B9CD-C1CC-574E-6AF8DD62423C">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: cd_postagem_favorita&lt;br/&gt;Classe:  Determinante&lt;br/&gt;Domínio: Numérico&lt;br/&gt;Tamanho: 5&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Chave primária da tabela dnt_postagem_favorita</commentInRDBMS>
+<generatorID>538FE445-4C45-0D08-DAAA-2EDCFAFFF5D1</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_usuario" id="10920084-3C48-7624-7387-2F42E4E30DE5">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: cd_usuario&lt;br/&gt;Classe:  Simples&lt;br/&gt;Domínio: Numérico&lt;br/&gt;Tamanho: 5&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Chave estrangeira da tabela dnt_usuario</commentInRDBMS>
+<generatorID>0DF0A75A-9672-3807-C6C9-2E61DBEFA134</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84B33E11-22E7-301F-B362-674378F2C08F" referredColumn="AB53D1FF-483A-2E07-5197-4DA018235570"/>
+</associations>
+</Column>
+<Column name="cd_postagem" id="6495D46A-7590-836E-0D41-A309C98A1E42">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>D0DCC3A8-B1E8-9D77-5FB2-263843C43A3F</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="775B359B-0E3F-A3D5-0758-869D5BAA9B9A" referredColumn="2C22002B-269E-BED8-E634-2CDDE3E4BE02"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD1D8133-6D16-9267-99D7-8DE1F5A422F8" name="PK_POSTAGEM_FAVORITA">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>AC426ECF-AFDE-77C6-612E-C927F47C1AD4</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7502645-B9CD-C1CC-574E-6AF8DD62423C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA59A6A5-F430-646B-CE05-2FCEE18022D0" name="FK_POSTAGEM_FAVORITA_POSTAGEM">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>CF2482B6-8DDD-5378-239D-D0DFB4710DE8</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6495D46A-7590-836E-0D41-A309C98A1E42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83F10133-67EA-F6B7-2B35-1AA7C95897A3" name="FK_POSTAGEM_FAVORITA_USUARIO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>381ACEA9-49C1-1623-1DC6-5C10999D4945</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10920084-3C48-7624-7387-2F42E4E30DE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

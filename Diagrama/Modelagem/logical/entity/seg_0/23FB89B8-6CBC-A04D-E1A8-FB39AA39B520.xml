@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="23FB89B8-6CBC-A04D-E1A8-FB39AA39B520" name="DNT_POSTAGEM">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:24:14 UTC</createdTime>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_postagem" id="8D0CBEE5-D7C6-2242-3240-15C8D0930130">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:24:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: cd_postagem
+Classe:  Determinante
+Domínio: Numérico
+Tamanho: 5
+Obrigatório: Sim
+Descrição: Chave primária da tabela dnt_postagem]]></commentInRDBMS>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_usuario" id="08465FF5-1433-E183-E913-78FCCDA7D615">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:39:43 UTC</createdTime>
+<generatorID>F125ACB3-ED7F-3480-B978-6DF9C9BD9CA4</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<referedAttribute>A2DABE78-FD60-14DA-3DB2-ACF01D598357</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_postagem" id="F61DCEB4-5597-1461-C94B-82C3146C18A2">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:25:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: ds_postagem
+Classe:  Simples
+Domínio: Texto
+Tamanho: 1000
+Obrigatório: Sim
+Descrição: Coluna que irá armazenar o texto de uma determinada postagem]]></commentInRDBMS>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fl_imagem" id="317703F4-BB76-886E-0977-E670C76DE148">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:24:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo: fl_imagem
+Classe:  Simples
+Domínio: Byte[ ]
+Obrigatório: Não
+Descrição: Coluna que irá armazenar a imagem de uma determinada postagem]]></commentInRDBMS>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7D3B4D27-AAAF-EB98-8DDC-11CEB77A76DA" name="PK_POSTAGEM">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-04-21 13:24:41 UTC</createdTime>
+<ownerDesignName>Modelagem</ownerDesignName>
+<engineerTo>
+<item key="DE43F7F2-FBE4-D183-EDC1-36468674F3CD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>8D0CBEE5-D7C6-2242-3240-15C8D0930130</newElementsIDs>
+<usedAttributes>
+<attributeRef>8D0CBEE5-D7C6-2242-3240-15C8D0930130</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

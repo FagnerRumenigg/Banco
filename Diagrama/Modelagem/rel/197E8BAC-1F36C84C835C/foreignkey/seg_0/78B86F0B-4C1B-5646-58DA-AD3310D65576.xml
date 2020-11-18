@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="78B86F0B-4C1B-5646-58DA-AD3310D65576" containerWithKeyObject="BA59401F-7A55-D008-E570-4772CFEF0937" localFKIndex="7DDC8352-8C9A-BDA5-138E-DD4457CE991D" name="FK_REACAO_POSTAGEM_REACAO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>6B5BE03F-5B06-F1D8-BC2B-C078D146A605</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<referredTableLongName>DNT_REACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D2E0137A-9F7C-C2A6-1858-426CE583ED42</referredTableID>
+<keyObject>817270BF-F133-F544-D13E-BC14DD826C4B</keyObject>
+<referredKeyID>817270BF-F133-F544-D13E-BC14DD826C4B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_reacao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2E0137A-9F7C-C2A6-1858-426CE583ED42" name="DNT_REACAO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>5C697B89-E3F3-E8B9-A265-745F769FA726</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_reacao" id="E16DF754-953E-3C2E-CA0F-9DB2B56F069F">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: cd_reacao&lt;br/&gt;Classe:  Determinante&lt;br/&gt;Domínio: Numérico&lt;br/&gt;Tamanho: 5&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Chave primária da tabela dnt_reacao</commentInRDBMS>
+<generatorID>1A91CF69-1E8D-DEFB-A0AD-F1B90FE39534</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_reacao" id="5415185B-68D2-21B7-D4F1-6C1E528785EF">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<commentInRDBMS>Atributo: nm_reacao&lt;br/&gt;Classe:  Simples&lt;br/&gt;Domínio: Texto&lt;br/&gt;Tamanho: 20&lt;br/&gt;Obrigatório: Sim&lt;br/&gt;Descrição: Coluna que irá armazenar as possivéis reações que um usuário pode fazer em uma postagem</commentInRDBMS>
+<generatorID>E7DC8707-1762-110C-CF37-C34C1D1C1736</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="817270BF-F133-F544-D13E-BC14DD826C4B" name="PK_REACAO">
+<createdBy>Administrador</createdBy>
+<createdTime>2020-06-12 16:42:10 UTC</createdTime>
+<generatorID>113931C8-29F3-12C3-F621-EBEF0AA1765A</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E16DF754-953E-3C2E-CA0F-9DB2B56F069F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
