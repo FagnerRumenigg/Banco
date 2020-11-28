@@ -1,2 +1,2 @@
 # Banco
-Alguns projetos de Bando de dados.
+Alguns projetos de Banco de dados.
